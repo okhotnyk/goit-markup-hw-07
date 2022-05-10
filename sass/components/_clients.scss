@@ -1,0 +1,33 @@
+.client-button {
+  display: flex;
+  margin-right: 30px;
+}
+
+.client-button:last-of-type {
+  margin-right: 0px;
+}
+
+.link-client {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-gray);
+  border-radius: 4px;
+
+  color: var(--icons-gray);
+
+  align-items: center;
+  justify-content: center;
+
+  transition: color 250ms var(--cubic), border 250ms var(--cubic);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--brand-accent-color);
+    color: var(--brand-accent-color);
+  }
+}
+
+.icon-client {
+  fill: currentColor;
+}

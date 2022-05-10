@@ -1,0 +1,138 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: var(--contrast-text-color);
+  background-color: var(--brand-background);
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo--negative {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--contrast-text-color);
+}
+
+.logo--negative:visited {
+  color: var(--contrast-text-color);
+}
+
+/* --- address --- */
+
+.address {
+  display: inline-block;
+
+  color: var(--contrast-text-color);
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* --- list of contacts --- */
+
+.link__contact {
+  color: var(--contrast-text-color);
+  opacity: 60%;
+
+  transition: color 250ms var(--cubic);
+}
+
+.link__address {
+  color: var(--contrast-text-color);
+
+  transition: color 250ms var(--cubic);
+}
+
+.link__address:hover,
+.link__address:focus,
+.link__contact:hover,
+.link__contact:focus {
+  color: var(--brand-accent-color);
+}
+
+.contact-item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
+}
+
+/* блок "присоединяйтесь" */
+
+.invite-block {
+  margin-left: 70px;
+}
+
+.invite-block .social {
+  margin-top: 20px;
+}
+
+.invite {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--contrast-text-color);
+}
+
+/* -------Subscription------- */
+
+.subscription {
+  margin-left: 93px;
+}
+
+.footer__input {
+  display: block;
+  margin-top: 20px;
+  margin-right: 12px;
+  padding-left: 16px;
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--contrast-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  transition: border-color 250ms var(--cubic);
+}
+
+.footer__input:focus {
+  outline: transparent;
+  border-color: var(--brand-accent-color);
+}
+
+.footer__input:not(:placeholder-shown) {
+  background-color: transparent;
+}
+
+.subcript__email {
+  display: flex;
+}
+
+.button--subscription {
+  display: flex;
+  height: 50px;
+  width: 200px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--brand-accent-color);
+  color: var(--contrast-text-color);
+
+  transition: background-color 250ms var(--cubic);
+}
+
+.button--subscription:hover {
+  background-color: var(--accent-color-hover);
+}
+
+.subscription__icon {
+  display: inline-block;
+  margin-left: 10px;
+  fill: white;
+}

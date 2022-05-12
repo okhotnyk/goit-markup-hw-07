@@ -10,10 +10,10 @@
   opacity: 1;
   visibility: visible;
 
-  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+  transition: opacity $trans, visibility $trans;
 }
 
-.backdrop--is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

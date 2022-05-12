@@ -16,3 +16,13 @@
     padding-bottom: 25px;
   }
 }
+
+.logo--negative {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--contrast-text-color);
+
+  &:visited {
+    color: var(--contrast-text-color);
+  }
+}

@@ -20,7 +20,7 @@
   background-color: var(--brand-accent-color);
   color: var(--contrast-text-color);
 
-  transition: background-color 250ms var(--cubic);
+  transition: background-color $trans;
 
   &:hover,
   &:focus {
@@ -37,8 +37,7 @@
   background-color: var(--second-background);
   color: var(--title-text-color);
 
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
-    box-shadow 250ms var(--cubic);
+  transition: background-color $trans, color $trans, box-shadow $trans;
 
   &:hover,
   &:focus {

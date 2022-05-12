@@ -9,14 +9,14 @@
   border-radius: 50%;
 
   color: var(--icons-gray);
-}
 
-.plate__social:last-of-type {
-  margin-right: 0px;
-}
+  &:last-of-type {
+    margin-right: 0px;
+  }
 
-.plate__social--contrast {
-  background-color: rgba(255, 255, 255, 0.1);
+  &--contrast {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .link__social {
@@ -30,22 +30,22 @@
 
   color: var(--icons-gray);
 
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
-}
+  transition: background-color $trans, color $trans;
 
-.link__social:hover,
-.link__social:focus {
-  color: var(--contrast-text-color);
-  background-color: var(--brand-accent-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--contrast-text-color);
+    background-color: var(--brand-accent-color);
+  }
 
-.link__social--contrast {
-  color: var(--contrast-text-color);
+  &--contrast {
+    color: var(--contrast-text-color);
 
-  transition: background-color 250ms var(--cubic);
-}
+    transition: background-color $trans;
 
-.link__social--contrast:focus,
-.link__social--contrast:hover {
-  background-color: var(--brand-accent-color);
+    &:hover,
+    &:focus {
+      background-color: var(--brand-accent-color);
+    }
+  }
 }

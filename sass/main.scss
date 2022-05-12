@@ -1,3 +1,4 @@
+@import "./utils/normalize";
 @import "./utils/vars";
 @import "./utils/reset";
 @import "./utils/visually-hidden";
@@ -11,9 +12,11 @@
 @import "./components/button";
 @import "./components/backdrop";
 @import "./components/modal";
+@import "./components/modal-form";
 @import "./components/particularities";
 @import "./components/production";
 @import "./components/team";
 @import "./components/icons-social";
 @import "./components/clients";
 @import "./components/footer";
+@import "./components/portfolio";

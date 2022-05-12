@@ -9,11 +9,11 @@
 
   transform: translate(-50%, -50%) scale(1);
 
-  transition: transform 250ms var(--cubic);
-}
+  transition: transform $trans;
 
-.backdrop--is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
+  .is-hidden & {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
 }
 
 .button-close {
@@ -36,22 +36,18 @@
   background-color: var(--contrast-text-color);
   color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
-}
 
-.button-close:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .icon-close {
   fill: var(--title-text-color);
-  transition: fill 250ms var(--cubic);
-}
+  transition: fill $trans;
 
-.button-close:focus {
-  outline: none;
-}
-
-.button-close:hover > .icon-close,
-.button-close:focus > .icon-close {
-  fill: var(--brand-accent-color);
+  .button-close:hover > &,
+  .button-close:focus > & {
+    fill: var(--brand-accent-color);
+  }
 }

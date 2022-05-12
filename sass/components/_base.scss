@@ -8,10 +8,10 @@
   /* outline: 2px solid tomato; */
   margin-left: auto;
   margin-right: auto;
-}
 
-.container--flex {
-  display: flex;
+  &--flex {
+    display: flex;
+  }
 }
 
 .section {
@@ -43,4 +43,15 @@
 
 .photo {
   display: block;
+}
+
+@mixin flexCenter($type: flex, $x-axis: center, $y-axis: center) {
+  display: $type;
+  justify-content: $x-axis;
+  align-items: $y-axis;
+}
+
+@mixin textParam($line: 1.56, $space: 0.03em) {
+  line-height: $line;
+  letter-spacing: $space;
 }

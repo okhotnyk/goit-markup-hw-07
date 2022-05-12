@@ -1,11 +1,10 @@
 .icon__plate {
-  display: flex;
+  @include flexCenter();
+
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--second-background);
-  align-items: center;
-  justify-content: center;
 }
 
 .particularity__title {

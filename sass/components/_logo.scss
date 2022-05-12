@@ -2,14 +2,18 @@
   font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  @include textParam(1.2);
+
   color: var(--brand-black);
+
   span {
     color: var(--brand-accent-color);
   }
+
   &:visited {
     color: var(--brand-black);
   }
+
   &--preceding {
     margin-right: 93px;
     padding-top: 24px;

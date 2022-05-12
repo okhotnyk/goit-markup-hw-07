@@ -1,27 +1,26 @@
 .production {
   position: relative;
-}
 
-.production:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .production__type {
-  display: flex;
+  @include flexCenter();
+
   position: absolute;
   bottom: 0px;
   left: 0px;
 
   width: 370px;
   height: 70px;
-  justify-content: center;
-  align-items: center;
 
   font-family: $main-font;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include textParam(1.14);
+
   text-transform: uppercase;
   text-align: center;
 

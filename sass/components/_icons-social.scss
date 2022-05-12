@@ -1,10 +1,15 @@
+%icon {
+  fill: currentColor;
+}
+
 .social {
   display: flex;
   justify-content: center;
 }
 
-.plate__social {
+.social__plate {
   display: flex;
+
   margin-right: 10px;
   border-radius: 50%;
 
@@ -16,17 +21,15 @@
 
   &--contrast {
     background-color: rgba(255, 255, 255, 0.1);
+    color: var(--contrast-text-color);
   }
 }
 
-.link__social {
-  display: flex;
+.social__link {
+  @include flexCenter();
   width: 44px;
   height: 44px;
   border-radius: 50%;
-
-  align-items: center;
-  justify-content: center;
 
   color: var(--icons-gray);
 

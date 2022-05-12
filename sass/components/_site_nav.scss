@@ -4,8 +4,7 @@
 
 .nav__item {
   font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  @include textParam(1.2, 0.02em);
 
   & ~ & {
     margin-left: 50px;
@@ -16,9 +15,10 @@
   display: block;
   position: relative;
 
-  color: var(--title-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: var(--title-text-color);
 
   transition: color $trans;
 

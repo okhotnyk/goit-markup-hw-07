@@ -18,8 +18,8 @@
 
 .form__placeholder {
   font-size: 12px;
-  letter-spacing: 0.01em;
-  line-height: 1.17;
+  @include textParam(1.17, 0.01em);
+
   color: var(--primary-text-color);
 }
 
@@ -57,7 +57,7 @@
   position: relative;
 }
 
-.icon--form {
+.form__icon {
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -65,7 +65,7 @@
   transform: translateY(-50%);
 }
 
-.form__input:focus + .icon--form {
+.form__input:focus + .form__icon {
   fill: var(--brand-accent-color);
 }
 
@@ -81,7 +81,7 @@
   }
 }
 
-.text-area {
+.form-field__text {
   position: relative;
   margin-bottom: 20px;
 }
@@ -139,7 +139,7 @@ input:-webkit-autofill:active {
 
   flex-shrink: 0;
 
-  transition: fill 250ms var(--cubic);
+  transition: fill $trans;
 }
 
 .form__checkbox:focus + .icon--checkbox {
@@ -152,7 +152,7 @@ input:-webkit-autofill:active {
   fill: var(--contrast-text-color);
 }
 
-.modal-submit-button {
+.modal__submit-button {
   display: block;
   width: 200px;
   margin-right: auto;

@@ -25,14 +25,14 @@
 
   font-size: 18px;
   font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include textParam(2, 0.06em);
+
   color: var(--title-text-color);
 }
 
 .example__type {
   font-size: 16px;
-  line-height: 1.88;
+  @include textParam(1.88);
   color: var(--primary-text-color);
 }
 
@@ -42,7 +42,7 @@
   border-top: none;
 }
 
-.thumb {
+.example__thumb {
   position: relative;
   overflow: hidden;
 }
@@ -64,8 +64,8 @@
 
   font-family: $main-font;
   font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+
+  @include textParam();
 
   transition: transform $trans;
 }

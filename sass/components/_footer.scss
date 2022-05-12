@@ -1,4 +1,4 @@
-.footer {
+.footer__social {
   padding-top: 60px;
   padding-bottom: 60px;
   color: var(--contrast-text-color);
@@ -12,7 +12,7 @@
 
 /* --- address --- */
 
-.address {
+.contact {
   display: inline-block;
 
   color: var(--contrast-text-color);
@@ -22,7 +22,7 @@
 
 /* --- list of contacts --- */
 
-.link__address {
+.address__link {
   color: var(--contrast-text-color);
 
   transition: color $trans;
@@ -33,19 +33,19 @@
   }
 }
 
-.link__contact {
-  @extend .link__address;
+.contact__link {
+  @extend .address__link;
   opacity: 60%;
 }
 
-.contact-item:not(:last-child) {
+.contact__item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
 }
 
 /* блок "присоединяйтесь" */
 
-.invite-block {
+.footer__social {
   margin-left: 70px;
 
   & .social {
@@ -53,11 +53,11 @@
   }
 }
 
-.invite {
+.footer__title {
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include textParam(1.17, 0.03em);
+
   color: var(--contrast-text-color);
 }
 
@@ -67,7 +67,7 @@
   margin-left: 93px;
 }
 
-.footer__input {
+.subscription__input {
   display: block;
   margin-top: 20px;
   margin-right: 12px;
@@ -81,7 +81,8 @@
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+
+  @include textParam(1.25);
 
   transition: border-color $trans;
 
@@ -94,17 +95,15 @@
   }
 }
 
-.subcript__email {
+.subcription__email {
   display: flex;
 }
 
-.button--subscription {
-  display: flex;
+.subscription__button {
+  @include flexCenter();
   height: 50px;
   width: 200px;
   margin-top: 20px;
-  align-items: center;
-  justify-content: center;
 
   background-color: var(--brand-accent-color);
   color: var(--contrast-text-color);

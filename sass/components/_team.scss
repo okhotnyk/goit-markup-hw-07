@@ -2,12 +2,13 @@
   background-color: var(--second-background);
 }
 
-.team-card {
+.team__card {
   width: 270px;
 
   background-color: var(--contrast-text-color);
   font-size: 16px;
-  line-height: 1.17;
+  @include textParam(1.17);
+
   text-align: center;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -19,21 +20,21 @@
   }
 }
 
-.team-card__text {
+.team__text {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-card__name {
+.team__name {
   margin-bottom: 10px;
 
   font-weight: 500;
   color: var(--title-text-color);
 }
 
-.team-card__position {
+.team__position {
   margin-bottom: 16px;
 
   color: var(--primary-text-color);

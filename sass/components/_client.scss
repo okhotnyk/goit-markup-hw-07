@@ -1,23 +1,20 @@
-.client-button {
+.client__button {
   display: flex;
   margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0px;
+  }
 }
 
-.client-button:last-of-type {
-  margin-right: 0px;
-}
-
-.link-client {
-  display: flex;
+.client__link {
+  @include flexCenter();
   width: 170px;
   height: 92px;
   border: 1px solid var(--icons-gray);
   border-radius: 4px;
 
   color: var(--icons-gray);
-
-  align-items: center;
-  justify-content: center;
 
   transition: color $trans, border $trans;
 
@@ -28,6 +25,6 @@
   }
 }
 
-.icon-client {
-  fill: currentColor;
+.client__icon {
+  @extend %icon;
 }

@@ -17,10 +17,9 @@
 }
 
 .button-close {
+  @include flexCenter();
+  
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   top: 8px;
   right: 8px;
 

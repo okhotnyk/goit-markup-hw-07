@@ -1,5 +1,6 @@
 .nav__site-nav {
   display: flex;
+  align-items: center;
 }
 
 .nav__item {
@@ -42,11 +43,13 @@
   }
 }
 
-.nav__contact {
+.nav__cont-nav {
   display: flex;
   align-items: center;
   margin-left: auto;
+}
 
+.cont-nav__link {
   color: var(--primary-text-color);
 
   transition: color $trans;

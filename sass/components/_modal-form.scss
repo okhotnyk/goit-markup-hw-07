@@ -58,6 +58,7 @@
 }
 
 .form__icon {
+  @extend %icon;
   position: absolute;
   display: inline-block;
   top: 50%;

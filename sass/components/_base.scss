@@ -33,14 +33,6 @@
   text-align: center;
 }
 
-.icon {
-  fill: currentColor;
-}
-
-.icon--media {
-  margin-right: 10px;
-}
-
 .photo {
   display: block;
 }
@@ -54,4 +46,9 @@
 @mixin textParam($line: 1.56, $space: 0.03em) {
   line-height: $line;
   letter-spacing: $space;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
